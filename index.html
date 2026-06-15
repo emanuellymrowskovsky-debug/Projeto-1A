@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Nails - Unhas em Gel</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcf8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Menu */
+        header {
+            background-color: #ffffff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #d4a373;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #555;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4a373;
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(255, 241, 241, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1200') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #4a3b32;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #665c54;
+            margin-bottom: 25px;
+            max-width: 600px;
+        }
+
+        .btn-agendar {
+            background-color: #d4a373;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-agendar:hover {
+            background-color: #b78a5e;
+        }
+
+        /* Seção de Serviços */
+        .servicos {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .servicos h2 {
+            color: #4a3b32;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .servicos h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #d4a373;
+            margin: 10px auto 0;
+        }
+
+        .grid-servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card-servico {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            border: 1px solid #f1eae4;
+        }
+
+        .card-servico h3 {
+            color: #d4a373;
+            margin-bottom: 15px;
+        }
+
+        .preco {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4a3b32;
+            margin-top: 15px;
+            display: block;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #4a3b32;
+            color: #fefae0;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Studio Nails</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Unhas em Gel Impecáveis</h1>
+        <p>Eleve sua autoestima com alongamentos duradouros, acabamento natural e o brilho que você merece.</p>
+        <a href="https://wa.me/5500999999999" target="_blank" class="btn-agendar">Agendar no WhatsApp</a>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="grid-servicos">
+            
+            <div class="card-servico">
+                <h3>Alongamento em Gel</h3>
+                <p>Extensão com gel de alta resistência e formato personalizado para as suas mãos.</p>
+                <span class="preco">R$ 120,00</span>
+            </div>
+
+            <div class="card-servico">
+                <h3>Manutenção</h3>
+                <p>Preenchimento do crescimento e nivelamento para manter o brilho e a força.</p>
+                <span class="preco">R$ 80,00</span>
+            </div>
+
+            <div class="card-servico">
+                <h3>Banho de Gel</h3>
+                <p>Uma camada protetora sobre a sua unha natural para evitar quebras e descamação.</p>
+                <span class="preco">R$ 70,00</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p style="margin-bottom: 10px;">📍 Atendimento com hora marcada | Rua das Flores, 123</p>
+        <p>&copy; 2026 Studio Nails. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
